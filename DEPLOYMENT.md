@@ -29,41 +29,46 @@ npm run deploy  # Deploy to GitHub Pages (after setup)
 
 ## 📦 GitHub Pages Deployment
 
-### Step 1: Push to GitHub
+### Step 1: Repository Setup
 
-1. Initialize git repository:
+Your code is already in the `gdgmit.github.io` repository, which is perfect for GitHub Pages!
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: GDG MIT Blog Portal"
-   ```
+### Step 2: Configure GitHub Pages
 
-2. Create a new repository on GitHub named `blog`
+1. Go to your repository: `https://github.com/gdgmit/gdgmit.github.io`
+2. Click on **Settings** tab
+3. Scroll down to **Pages** section in the left sidebar
+4. Under **Source**, select **GitHub Actions**
+5. Save the settings
 
-3. Push your code:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/blog.git
-   git push -u origin main
-   ```
+### Step 3: Enable Workflow Permissions
 
-### Step 2: Enable GitHub Pages
+1. Still in repository Settings, go to **Actions** → **General**
+2. Scroll to **Workflow permissions**
+3. Select **Read and write permissions**
+4. Check **Allow GitHub Actions to create and approve pull requests**
+5. Click **Save**
 
-1. Go to your repository settings
-2. Navigate to "Pages" section
-3. Select "GitHub Actions" as source
-4. The deployment will start automatically
+### Step 4: Deploy
 
-### Step 3: Update Configuration
+The deployment will trigger automatically on your next push to main branch:
 
-Update the homepage URL in `package.json`:
-
-```json
-"homepage": "https://YOUR_USERNAME.github.io/blog/"
+```bash
+git add .
+git commit -m "Fix GitHub Pages deployment configuration"
+git push origin main
 ```
 
-Your site will be available at: `https://YOUR_USERNAME.github.io/blog/`
+Your site will be available at: `https://gdgmit.github.io/`
+
+### Troubleshooting
+
+If deployment still fails:
+
+1. **Check Pages Settings**: Ensure "GitHub Actions" is selected as source
+2. **Check Permissions**: Verify workflow permissions are set to "Read and write"
+3. **Repository Type**: Since this is `gdgmit.github.io`, it's a user/organization site that deploys from root
+4. **Base Path**: The app is configured for root path (`/`) which is correct for user sites
 
 ## 🎨 Customization
 
