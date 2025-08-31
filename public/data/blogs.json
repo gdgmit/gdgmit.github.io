@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with Android Development at MIT",
+    "slug": "getting-started-android-development-mit",
+    "excerpt": "Learn the fundamentals of Android development through our comprehensive workshop series at GDG MIT.",
+    "content": "Android development has become an essential skill in today's mobile-first world. At Google Developer Groups MIT, we provide comprehensive workshops to help students master Android development from the ground up.\n\nIn this beginner-friendly guide, we'll walk you through the fundamentals of Android development using Kotlin, Google's preferred language for Android development.\n\n## Getting Started with Android Studio\n\nFirst, you'll need to set up your development environment. Android Studio is the official IDE for Android development and provides everything you need to build amazing apps.\n\n### Key Topics Covered:\n- Setting up Android Studio and SDK\n- Understanding the Android project structure\n- Building your first \"Hello World\" app\n- Working with Activities and Fragments\n- Designing beautiful UIs with Material Design\n- Handling user interactions and navigation\n\n## Why Choose Kotlin?\n\nKotlin offers several advantages over Java for Android development:\n- **Concise**: Drastically reduce boilerplate code\n- **Safe**: Avoid entire classes of errors such as null pointer exceptions\n- **Interoperable**: Leverage existing libraries for the JVM, Android, and the browser\n- **Tool-friendly**: Choose any Java IDE or build from the command line\n\nJoin our next Android workshop to get hands-on experience and build your first Android app with guidance from industry experts!",
+    "author": {
+      "name": "Priya Sharma",
+      "avatar": "/blog/images/authors/priya.jpg",
+      "bio": "Android Developer and GDG MIT Lead"
+    },
+    "publishedAt": "2024-08-15T10:00:00Z",
+    "updatedAt": "2024-08-15T10:00:00Z",
+    "featured": true,
+    "tags": ["android", "mobile", "development", "kotlin"],
+    "category": "Mobile Development",
+    "readingTime": 8,
+    "image": "/blog/images/blogs/android-dev.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Web Development with Firebase: A Complete Guide",
+    "slug": "web-development-firebase-complete-guide",
+    "excerpt": "Explore how Firebase can accelerate your web development process with real-time databases and authentication.",
+    "content": "Firebase provides a complete platform for building web applications quickly and efficiently. In this comprehensive guide, we'll explore how to integrate Firebase services into your web applications to create powerful, scalable solutions.\n\n## What is Firebase?\n\nFirebase is Google's mobile and web application development platform that provides developers with a variety of tools and services to help them develop high-quality applications.\n\n### Core Firebase Services:\n\n**Authentication**: Secure user authentication with email/password, social logins, and more\n**Realtime Database**: Store and sync data across all clients in realtime\n**Cloud Firestore**: Flexible, scalable NoSQL cloud database\n**Hosting**: Fast and secure web hosting for modern web apps\n**Cloud Functions**: Run backend code without managing servers\n**Cloud Storage**: Store and serve user-generated content\n\n## Building Your First Firebase Web App\n\nLet's walk through creating a simple web application with Firebase:\n\n### Step 1: Set Up Firebase Project\n1. Go to the Firebase Console\n2. Create a new project\n3. Add your web app to the project\n4. Install Firebase SDK\n\n### Step 2: Initialize Firebase in Your App\n```javascript\nimport { initializeApp } from 'firebase/app';\nimport { getFirestore } from 'firebase/firestore';\nimport { getAuth } from 'firebase/auth';\n\nconst firebaseConfig = {\n  // Your config\n};\n\nconst app = initializeApp(firebaseConfig);\nexport const db = getFirestore(app);\nexport const auth = getAuth(app);\n```\n\n### Step 3: Add Authentication\nImplement user authentication with just a few lines of code using Firebase Auth.\n\n### Step 4: Store and Retrieve Data\nUse Cloud Firestore to store and sync your application data across all clients.\n\nFirebase dramatically reduces the time it takes to build and deploy web applications, allowing you to focus on creating great user experiences rather than managing backend infrastructure.",
+    "author": {
+      "name": "Arjun Krishna",
+      "avatar": "/blog/images/authors/arjun.jpg",
+      "bio": "Full Stack Developer and Firebase Expert"
+    },
+    "publishedAt": "2024-08-20T14:30:00Z",
+    "updatedAt": "2024-08-20T14:30:00Z",
+    "featured": true,
+    "tags": ["firebase", "web", "development", "javascript"],
+    "category": "Web Development",
+    "readingTime": 12,
+    "image": "/blog/images/blogs/firebase-web.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Machine Learning with TensorFlow: Workshop Highlights",
+    "slug": "machine-learning-tensorflow-workshop",
+    "excerpt": "Key takeaways from our recent TensorFlow workshop covering neural networks and deep learning fundamentals.",
+    "content": "Our recent TensorFlow workshop was a huge success with over 100 participants learning about machine learning fundamentals...",
+    "author": {
+      "name": "Dr. Meera Nair",
+      "avatar": "/blog/images/authors/meera.jpg",
+      "bio": "AI Research Professor and GDG MIT Mentor"
+    },
+    "publishedAt": "2024-08-25T16:00:00Z",
+    "updatedAt": "2024-08-25T16:00:00Z",
+    "featured": false,
+    "tags": ["tensorflow", "machine-learning", "ai", "python"],
+    "category": "Machine Learning",
+    "readingTime": 10,
+    "image": "/blog/images/blogs/tensorflow-workshop.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Cloud Computing with Google Cloud Platform",
+    "slug": "cloud-computing-google-cloud-platform",
+    "excerpt": "Understanding the basics of cloud computing and how to leverage Google Cloud Platform for your projects.",
+    "content": "Google Cloud Platform offers a comprehensive suite of cloud services that can help developers build scalable applications...",
+    "author": {
+      "name": "Rahul Raj",
+      "avatar": "/blog/images/authors/rahul.jpg",
+      "bio": "Cloud Engineer and GCP Certified Professional"
+    },
+    "publishedAt": "2024-08-28T11:15:00Z",
+    "updatedAt": "2024-08-28T11:15:00Z",
+    "featured": true,
+    "tags": ["gcp", "cloud", "infrastructure", "devops"],
+    "category": "Cloud Computing",
+    "readingTime": 15,
+    "image": "/blog/images/blogs/gcp-basics.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Flutter Development: Cross-Platform Magic",
+    "slug": "flutter-development-cross-platform",
+    "excerpt": "Discover how Flutter enables developers to create beautiful, natively compiled applications for mobile, web, and desktop.",
+    "content": "Flutter has revolutionized cross-platform development by allowing developers to write once and deploy everywhere...",
+    "author": {
+      "name": "Sneha Patel",
+      "avatar": "/blog/images/authors/sneha.jpg",
+      "bio": "Flutter Developer and UI/UX Specialist"
+    },
+    "publishedAt": "2024-08-30T09:45:00Z",
+    "updatedAt": "2024-08-30T09:45:00Z",
+    "featured": false,
+    "tags": ["flutter", "dart", "cross-platform", "mobile"],
+    "category": "Mobile Development",
+    "readingTime": 7,
+    "image": "/blog/images/blogs/flutter-development.jpg"
+  }
+]
