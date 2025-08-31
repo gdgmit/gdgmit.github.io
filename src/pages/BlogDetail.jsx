@@ -13,7 +13,7 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await fetch("/blog/data/blogs.json");
+        const response = await fetch("/data/blogs.json");
         const blogs = await response.json();
 
         const foundBlog = blogs.find((b) => b.slug === slug);
@@ -95,7 +95,7 @@ const BlogDetail = () => {
         {/* Blog Image */}
         <div className="blog-image">
           <img
-            src={blog.image || "/blog/images/placeholder-blog.jpg"}
+            src={blog.image || "/images/placeholder-blog.jpg"}
             alt={blog.title}
           />
         </div>
@@ -105,9 +105,7 @@ const BlogDetail = () => {
           <div className="author-info">
             <div className="author-avatar">
               <img
-                src={
-                  blog.author.avatar || "/blog/images/placeholder-avatar.jpg"
-                }
+                src={blog.author.avatar || "/images/placeholder-avatar.jpg"}
                 alt={blog.author.name}
               />
             </div>
@@ -153,9 +151,7 @@ const BlogDetail = () => {
                 >
                   <div className="related-image">
                     <img
-                      src={
-                        relatedBlog.image || "/blog/images/placeholder-blog.jpg"
-                      }
+                      src={relatedBlog.image || "/images/placeholder-blog.jpg"}
                       alt={relatedBlog.title}
                     />
                   </div>

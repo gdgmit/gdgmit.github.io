@@ -10,7 +10,7 @@ const BlogCard = ({ blog, featured = false }) => {
         {/* Blog Image */}
         <div className="blog-image">
           <img
-            src={blog.image || "/blog/images/placeholder-blog.jpg"}
+            src={blog.image || "/images/placeholder-blog.jpg"}
             alt={blog.title}
             loading="lazy"
           />
@@ -38,9 +38,7 @@ const BlogCard = ({ blog, featured = false }) => {
             <div className="author-info">
               <div className="author-avatar">
                 <img
-                  src={
-                    blog.author.avatar || "/blog/images/placeholder-avatar.jpg"
-                  }
+                  src={blog.author.avatar || "/images/placeholder-avatar.jpg"}
                   alt={blog.author.name}
                 />
               </div>
