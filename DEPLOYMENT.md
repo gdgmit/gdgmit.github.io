@@ -38,8 +38,11 @@ Your code is already in the `gdgmit.github.io` repository, which is perfect for 
 1. Go to your repository: `https://github.com/gdgmit/gdgmit.github.io`
 2. Click on **Settings** tab
 3. Scroll down to **Pages** section in the left sidebar
-4. Under **Source**, select **GitHub Actions**
-5. Save the settings
+4. Under **Source**, select **Deploy from a branch**
+5. Select **gh-pages** branch and **/ (root)** folder
+6. Save the settings
+
+Note: The `gh-pages` branch will be created automatically by the GitHub Action.
 
 ### Step 3: Enable Workflow Permissions
 
